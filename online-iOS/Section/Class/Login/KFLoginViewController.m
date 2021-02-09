@@ -11,7 +11,7 @@
 
 @interface KFLoginViewController ()
 
-@property (nonatomic, copy) NSString *test;
+@property (nonatomic, copy) NSString *tit;
 
 @end
 
