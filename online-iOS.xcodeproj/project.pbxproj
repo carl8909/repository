@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2854C40B25CAA379003A294C /* KFBasicServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 2854C40A25CAA379003A294C /* KFBasicServices.m */; };
+		2854C41025CAA49F003A294C /* KFTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2854C40F25CAA49F003A294C /* KFTabBarController.m */; };
+		2854C41525CAA4C2003A294C /* KFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2854C41425CAA4C2003A294C /* KFNavigationController.m */; };
+		2854C41D25CAAABC003A294C /* UIScrollView+KFRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2854C41C25CAAABC003A294C /* UIScrollView+KFRefreshView.m */; };
+		2854C42725CAAE57003A294C /* KFMJImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2854C42625CAAE57003A294C /* KFMJImageHelper.m */; };
+		2854C42C25CAAF48003A294C /* UIImage+KFCompression.m in Sources */ = {isa = PBXBuildFile; fileRef = 2854C42B25CAAF48003A294C /* UIImage+KFCompression.m */; };
+		2854C44625CBD818003A294C /* KFRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2854C44525CBD818003A294C /* KFRequest.m */; };
+		2854C44B25CBD849003A294C /* KFHostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2854C44A25CBD849003A294C /* KFHostViewController.m */; };
+		2854C45025CBE747003A294C /* KFHomeApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2854C44F25CBE747003A294C /* KFHomeApi.m */; };
+		2854C45D25CBEA2C003A294C /* NSMutableDictionary+KFOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2854C45C25CBEA2C003A294C /* NSMutableDictionary+KFOperation.m */; };
+		2854C46825CBEBE1003A294C /* KFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2854C46725CBEBE1003A294C /* KFHomeViewController.m */; };
+		2854C47125CBECA7003A294C /* KFMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2854C47025CBECA7003A294C /* KFMineViewController.m */; };
+		2888E7FD25C94F7A006A3016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2888E7F925C94F7A006A3016 /* Assets.xcassets */; };
+		2888E80325C95025006A3016 /* KFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2888E80225C95025006A3016 /* KFViewController.m */; };
+		2888E80925C953A9006A3016 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2888E80825C953A9006A3016 /* main.m */; };
+		28A3C8E325CD45FB004B82F3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A3C8E225CD45FB004B82F3 /* Launch Screen.storyboard */; };
+		28A3C93A25CF8574004B82F3 /* UIView+KFFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A3C93925CF8574004B82F3 /* UIView+KFFrame.m */; };
+		28A3C93F25CF8625004B82F3 /* NSObject+KFObserverHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A3C93E25CF8625004B82F3 /* NSObject+KFObserverHelper.m */; };
+		28A3C94425CF8828004B82F3 /* NSNumber+KFDecimalNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A3C94325CF8828004B82F3 /* NSNumber+KFDecimalNumber.m */; };
+		28A3C94925CF8F86004B82F3 /* NSArray+KFCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A3C94825CF8F86004B82F3 /* NSArray+KFCrash.m */; };
+		28A3C94E25CF9060004B82F3 /* NSDictionary+KFCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A3C94D25CF9060004B82F3 /* NSDictionary+KFCrash.m */; };
+		28A3C95325CF9189004B82F3 /* NSString+KFRegular.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A3C95225CF9189004B82F3 /* NSString+KFRegular.m */; };
+		28D39AC625CD2D8600363541 /* KFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D39AC525CD2D8600363541 /* KFLoginViewController.m */; };
+		28D39ACD25CD306000363541 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D39ACB25CD306000363541 /* libssl.a */; };
+		28D39ACE25CD306000363541 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D39ACC25CD306000363541 /* libcrypto.a */; };
+		28F846DE25C94528006A241D /* KFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F846DA25C94527006A241D /* KFAppDelegate.m */; };
+		D7D7E7A76F7237CBBB4D64D6 /* Pods_online_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A61A6D48DCB5BEC48FDD4E1 /* Pods_online_iOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A61A6D48DCB5BEC48FDD4E1 /* Pods_online_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_online_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2804199B25CA903A00E62053 /* KFangWang-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "KFangWang-Info.plist"; path = "online-iOS/KFangWang-Info.plist"; sourceTree = SOURCE_ROOT; };
+		2804199C25CA903A00E62053 /* KFangWang-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "KFangWang-Prefix.pch"; path = "online-iOS/KFangWang-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		2854C40925CAA379003A294C /* KFBasicServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFBasicServices.h; sourceTree = "<group>"; };
+		2854C40A25CAA379003A294C /* KFBasicServices.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFBasicServices.m; sourceTree = "<group>"; };
+		2854C40E25CAA49F003A294C /* KFTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFTabBarController.h; sourceTree = "<group>"; };
+		2854C40F25CAA49F003A294C /* KFTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFTabBarController.m; sourceTree = "<group>"; };
+		2854C41325CAA4C2003A294C /* KFNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFNavigationController.h; sourceTree = "<group>"; };
+		2854C41425CAA4C2003A294C /* KFNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFNavigationController.m; sourceTree = "<group>"; };
+		2854C41925CAA7E7003A294C /* KFColorMacors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFColorMacors.h; sourceTree = "<group>"; };
+		2854C41A25CAA85D003A294C /* KFNotificationMacors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFNotificationMacors.h; sourceTree = "<group>"; };
+		2854C41B25CAAABC003A294C /* UIScrollView+KFRefreshView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+KFRefreshView.h"; sourceTree = "<group>"; };
+		2854C41C25CAAABC003A294C /* UIScrollView+KFRefreshView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+KFRefreshView.m"; sourceTree = "<group>"; };
+		2854C42525CAAE57003A294C /* KFMJImageHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFMJImageHelper.h; sourceTree = "<group>"; };
+		2854C42625CAAE57003A294C /* KFMJImageHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFMJImageHelper.m; sourceTree = "<group>"; };
+		2854C42A25CAAF48003A294C /* UIImage+KFCompression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+KFCompression.h"; sourceTree = "<group>"; };
+		2854C42B25CAAF48003A294C /* UIImage+KFCompression.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KFCompression.m"; sourceTree = "<group>"; };
+		2854C44425CBD818003A294C /* KFRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFRequest.h; sourceTree = "<group>"; };
+		2854C44525CBD818003A294C /* KFRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFRequest.m; sourceTree = "<group>"; };
+		2854C44925CBD849003A294C /* KFHostViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFHostViewController.h; sourceTree = "<group>"; };
+		2854C44A25CBD849003A294C /* KFHostViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFHostViewController.m; sourceTree = "<group>"; };
+		2854C44E25CBE747003A294C /* KFHomeApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFHomeApi.h; sourceTree = "<group>"; };
+		2854C44F25CBE747003A294C /* KFHomeApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFHomeApi.m; sourceTree = "<group>"; };
+		2854C45B25CBEA2C003A294C /* NSMutableDictionary+KFOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+KFOperation.h"; sourceTree = "<group>"; };
+		2854C45C25CBEA2C003A294C /* NSMutableDictionary+KFOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+KFOperation.m"; sourceTree = "<group>"; };
+		2854C46625CBEBE1003A294C /* KFHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFHomeViewController.h; sourceTree = "<group>"; };
+		2854C46725CBEBE1003A294C /* KFHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFHomeViewController.m; sourceTree = "<group>"; };
+		2854C46F25CBECA7003A294C /* KFMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFMineViewController.h; sourceTree = "<group>"; };
+		2854C47025CBECA7003A294C /* KFMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFMineViewController.m; sourceTree = "<group>"; };
+		2888E7F925C94F7A006A3016 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2888E80125C95025006A3016 /* KFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFViewController.h; sourceTree = "<group>"; };
+		2888E80225C95025006A3016 /* KFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFViewController.m; sourceTree = "<group>"; };
+		2888E80725C953A9006A3016 /* KFMacors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFMacors.h; sourceTree = "<group>"; };
+		2888E80825C953A9006A3016 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		28A3C8E225CD45FB004B82F3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		28A3C93825CF8574004B82F3 /* UIView+KFFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+KFFrame.h"; sourceTree = "<group>"; };
+		28A3C93925CF8574004B82F3 /* UIView+KFFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+KFFrame.m"; sourceTree = "<group>"; };
+		28A3C93D25CF8625004B82F3 /* NSObject+KFObserverHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+KFObserverHelper.h"; sourceTree = "<group>"; };
+		28A3C93E25CF8625004B82F3 /* NSObject+KFObserverHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KFObserverHelper.m"; sourceTree = "<group>"; };
+		28A3C94225CF8828004B82F3 /* NSNumber+KFDecimalNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+KFDecimalNumber.h"; sourceTree = "<group>"; };
+		28A3C94325CF8828004B82F3 /* NSNumber+KFDecimalNumber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+KFDecimalNumber.m"; sourceTree = "<group>"; };
+		28A3C94725CF8F86004B82F3 /* NSArray+KFCrash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+KFCrash.h"; sourceTree = "<group>"; };
+		28A3C94825CF8F86004B82F3 /* NSArray+KFCrash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+KFCrash.m"; sourceTree = "<group>"; };
+		28A3C94C25CF9060004B82F3 /* NSDictionary+KFCrash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+KFCrash.h"; sourceTree = "<group>"; };
+		28A3C94D25CF9060004B82F3 /* NSDictionary+KFCrash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+KFCrash.m"; sourceTree = "<group>"; };
+		28A3C95125CF9189004B82F3 /* NSString+KFRegular.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+KFRegular.h"; sourceTree = "<group>"; };
+		28A3C95225CF9189004B82F3 /* NSString+KFRegular.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+KFRegular.m"; sourceTree = "<group>"; };
+		28D39AA325CBFE3E00363541 /* online-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "online-iOS.entitlements"; sourceTree = "<group>"; };
+		28D39AC425CD2D8600363541 /* KFLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFLoginViewController.h; sourceTree = "<group>"; };
+		28D39AC525CD2D8600363541 /* KFLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFLoginViewController.m; sourceTree = "<group>"; };
+		28D39ACB25CD306000363541 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = Pods/BaiduMapKit/BaiduMapKit/thirdlibs/libssl.a; sourceTree = "<group>"; };
+		28D39ACC25CD306000363541 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = Pods/BaiduMapKit/BaiduMapKit/thirdlibs/libcrypto.a; sourceTree = "<group>"; };
+		28F846B725C94438006A241D /* online-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "online-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28F846D825C94527006A241D /* KFAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFAppDelegate.h; sourceTree = "<group>"; };
+		28F846DA25C94527006A241D /* KFAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFAppDelegate.m; sourceTree = "<group>"; };
+		9A7BB9C2E782EDEDCB2A05FA /* Pods-online-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-online-iOS.release.xcconfig"; path = "Target Support Files/Pods-online-iOS/Pods-online-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		C0F29FA00F6CDC0A7FC054AA /* Pods-online-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-online-iOS.debug.xcconfig"; path = "Target Support Files/Pods-online-iOS/Pods-online-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28F846B425C94438006A241D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28D39ACD25CD306000363541 /* libssl.a in Frameworks */,
+				28D39ACE25CD306000363541 /* libcrypto.a in Frameworks */,
+				D7D7E7A76F7237CBBB4D64D6 /* Pods_online_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2804199825CA8FC500E62053 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2854C47E25CBF35A003A294C /* Controller */,
+				28F846D825C94527006A241D /* KFAppDelegate.h */,
+				28F846DA25C94527006A241D /* KFAppDelegate.m */,
+				2854C40925CAA379003A294C /* KFBasicServices.h */,
+				2854C40A25CAA379003A294C /* KFBasicServices.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2804199A25CA901000E62053 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2888E7F925C94F7A006A3016 /* Assets.xcassets */,
+				2888E80825C953A9006A3016 /* main.m */,
+				2804199B25CA903A00E62053 /* KFangWang-Info.plist */,
+				2804199C25CA903A00E62053 /* KFangWang-Prefix.pch */,
+				28A3C8E225CD45FB004B82F3 /* Launch Screen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2854C41825CAA798003A294C /* Macors */ = {
+			isa = PBXGroup;
+			children = (
+				2888E80725C953A9006A3016 /* KFMacors.h */,
+				2854C41925CAA7E7003A294C /* KFColorMacors.h */,
+				2854C41A25CAA85D003A294C /* KFNotificationMacors.h */,
+			);
+			path = Macors;
+			sourceTree = "<group>";
+		};
+		2854C42225CAAD3A003A294C /* Catergory(扩展类) */ = {
+			isa = PBXGroup;
+			children = (
+				2854C45325CBE8EA003A294C /* Foundation */,
+				2854C42325CAAD66003A294C /* UIKit */,
+			);
+			name = "Catergory(扩展类)";
+			path = Catergory;
+			sourceTree = "<group>";
+		};
+		2854C42325CAAD66003A294C /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				2854C41B25CAAABC003A294C /* UIScrollView+KFRefreshView.h */,
+				2854C41C25CAAABC003A294C /* UIScrollView+KFRefreshView.m */,
+				2854C42A25CAAF48003A294C /* UIImage+KFCompression.h */,
+				2854C42B25CAAF48003A294C /* UIImage+KFCompression.m */,
+				28A3C93825CF8574004B82F3 /* UIView+KFFrame.h */,
+				28A3C93925CF8574004B82F3 /* UIView+KFFrame.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		2854C42425CAADF1003A294C /* Components(公共类) */ = {
+			isa = PBXGroup;
+			children = (
+				2854C42525CAAE57003A294C /* KFMJImageHelper.h */,
+				2854C42625CAAE57003A294C /* KFMJImageHelper.m */,
+			);
+			name = "Components(公共类)";
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2854C45325CBE8EA003A294C /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				2854C45B25CBEA2C003A294C /* NSMutableDictionary+KFOperation.h */,
+				2854C45C25CBEA2C003A294C /* NSMutableDictionary+KFOperation.m */,
+				28A3C93D25CF8625004B82F3 /* NSObject+KFObserverHelper.h */,
+				28A3C93E25CF8625004B82F3 /* NSObject+KFObserverHelper.m */,
+				28A3C94225CF8828004B82F3 /* NSNumber+KFDecimalNumber.h */,
+				28A3C94325CF8828004B82F3 /* NSNumber+KFDecimalNumber.m */,
+				28A3C94725CF8F86004B82F3 /* NSArray+KFCrash.h */,
+				28A3C94825CF8F86004B82F3 /* NSArray+KFCrash.m */,
+				28A3C94C25CF9060004B82F3 /* NSDictionary+KFCrash.h */,
+				28A3C94D25CF9060004B82F3 /* NSDictionary+KFCrash.m */,
+				28A3C95125CF9189004B82F3 /* NSString+KFRegular.h */,
+				28A3C95225CF9189004B82F3 /* NSString+KFRegular.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		2854C46325CBEAF6003A294C /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				28D39AC325CD2D3A00363541 /* Login */,
+				2854C46E25CBEC95003A294C /* Mine */,
+				2854C46525CBEB8D003A294C /* Home */,
+				2854C46425CBEB19003A294C /* Host */,
+				2804199825CA8FC500E62053 /* Main */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		2854C46425CBEB19003A294C /* Host */ = {
+			isa = PBXGroup;
+			children = (
+				2854C44925CBD849003A294C /* KFHostViewController.h */,
+				2854C44A25CBD849003A294C /* KFHostViewController.m */,
+			);
+			path = Host;
+			sourceTree = "<group>";
+		};
+		2854C46525CBEB8D003A294C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2854C46625CBEBE1003A294C /* KFHomeViewController.h */,
+				2854C46725CBEBE1003A294C /* KFHomeViewController.m */,
+				2854C44E25CBE747003A294C /* KFHomeApi.h */,
+				2854C44F25CBE747003A294C /* KFHomeApi.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2854C46E25CBEC95003A294C /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				2854C46F25CBECA7003A294C /* KFMineViewController.h */,
+				2854C47025CBECA7003A294C /* KFMineViewController.m */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		2854C47625CBED19003A294C /* NetWork(网络请求) */ = {
+			isa = PBXGroup;
+			children = (
+				2854C44425CBD818003A294C /* KFRequest.h */,
+				2854C44525CBD818003A294C /* KFRequest.m */,
+			);
+			name = "NetWork(网络请求)";
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		2854C47E25CBF35A003A294C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2854C40E25CAA49F003A294C /* KFTabBarController.h */,
+				2854C40F25CAA49F003A294C /* KFTabBarController.m */,
+				2854C41325CAA4C2003A294C /* KFNavigationController.h */,
+				2854C41425CAA4C2003A294C /* KFNavigationController.m */,
+				2888E80125C95025006A3016 /* KFViewController.h */,
+				2888E80225C95025006A3016 /* KFViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		28D39AC325CD2D3A00363541 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				28D39AC425CD2D8600363541 /* KFLoginViewController.h */,
+				28D39AC525CD2D8600363541 /* KFLoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		28F846AE25C94438006A241D = {
+			isa = PBXGroup;
+			children = (
+				28F846B925C94438006A241D /* online-iOS */,
+				28F846B825C94438006A241D /* Products */,
+				BC7344C7F633EA78CE0A6EAA /* Pods */,
+				D7E9EEC48C9F831783340E8C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		28F846B825C94438006A241D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28F846B725C94438006A241D /* online-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28F846B925C94438006A241D /* online-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				28D39AA325CBFE3E00363541 /* online-iOS.entitlements */,
+				2854C47625CBED19003A294C /* NetWork(网络请求) */,
+				2854C42425CAADF1003A294C /* Components(公共类) */,
+				2854C42225CAAD3A003A294C /* Catergory(扩展类) */,
+				28F846D525C94527006A241D /* Helpers(工具类) */,
+				28F846D625C94527006A241D /* Resources(资源文件) */,
+				28F846D725C94527006A241D /* Section(功能模块) */,
+				28F846D325C94527006A241D /* ThirdLibraries(三方库) */,
+			);
+			path = "online-iOS";
+			sourceTree = "<group>";
+		};
+		28F846D325C94527006A241D /* ThirdLibraries(三方库) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "ThirdLibraries(三方库)";
+			path = ThirdLibraries;
+			sourceTree = "<group>";
+		};
+		28F846D525C94527006A241D /* Helpers(工具类) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Helpers(工具类)";
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		28F846D625C94527006A241D /* Resources(资源文件) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Resources(资源文件)";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		28F846D725C94527006A241D /* Section(功能模块) */ = {
+			isa = PBXGroup;
+			children = (
+				2854C46325CBEAF6003A294C /* Class */,
+				2854C41825CAA798003A294C /* Macors */,
+				2804199A25CA901000E62053 /* Supporting Files */,
+			);
+			name = "Section(功能模块)";
+			path = Section;
+			sourceTree = "<group>";
+		};
+		BC7344C7F633EA78CE0A6EAA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0F29FA00F6CDC0A7FC054AA /* Pods-online-iOS.debug.xcconfig */,
+				9A7BB9C2E782EDEDCB2A05FA /* Pods-online-iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D7E9EEC48C9F831783340E8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28D39ACC25CD306000363541 /* libcrypto.a */,
+				28D39ACB25CD306000363541 /* libssl.a */,
+				0A61A6D48DCB5BEC48FDD4E1 /* Pods_online_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28F846B625C94438006A241D /* online-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28F846D025C9443E006A241D /* Build configuration list for PBXNativeTarget "online-iOS" */;
+			buildPhases = (
+				6D343389A9C6D5147858EB79 /* [CP] Check Pods Manifest.lock */,
+				28F846B325C94438006A241D /* Sources */,
+				28F846B425C94438006A241D /* Frameworks */,
+				28F846B525C94438006A241D /* Resources */,
+				6B90CFCEE5562580A6A3C846 /* [CP] Copy Pods Resources */,
+				A618A600B85E40F3878C2F78 /* [CP] Embed Pods Frameworks */,
+				2854C40625CA96A8003A294C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "online-iOS";
+			productName = "online-iOS";
+			productReference = 28F846B725C94438006A241D /* online-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28F846AF25C94438006A241D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				ORGANIZATIONNAME = "深圳市看房网科技有限公司";
+				TargetAttributes = {
+					28F846B625C94438006A241D = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 28F846B225C94438006A241D /* Build configuration list for PBXProject "online-iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28F846AE25C94438006A241D;
+			productRefGroup = 28F846B825C94438006A241D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28F846B625C94438006A241D /* online-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28F846B525C94438006A241D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2888E7FD25C94F7A006A3016 /* Assets.xcassets in Resources */,
+				28A3C8E325CD45FB004B82F3 /* Launch Screen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2854C40625CA96A8003A294C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n#\n# Copyright 2016 Bugly, Tencent. All rights reserved.\n#\n# V1.4.0\n#\n# 2016.08.03\n#\n#\n#\n######################################################\n# 1. 脚本集成到Xcode工程的Target\n######################################################\n#\n# --- Copy the SCRIPT to the Run Script of Build Phases in the Xcode project ---\n#\n# #\nBUGLY_APP_ID=\"e3d4a0fe95\"\n# #\nBUGLY_APP_KEY=\"e8b83485-8420-4950-9e57-9cfb131d570c\"\n# #\nBUNDLE_IDENTIFIER=\"com.kfang.online\"\n# #\nUPLOAD_DSYM_ONLY=1\n#\n# # 脚本默认配置的版本格式为CFBundleShortVersionString(CFBundleVersion),  如果你修改默认的版本格式, 请设置此变量, 如果不想修改, 请忽略此设置\n# CUSTOMIZED_APP_VERSION=\"\"\n#\n# # Debug模式编译是否上传，1＝上传 0＝不上传，默认不上传\nUPLOAD_DEBUG_SYMBOLS=1\n#\n# # 模拟器编译是否上传，1=上传 0=不上传，默认不上传\nUPLOAD_SIMULATOR_SYMBOLS=1\n#\n# #只有Archive操作时上传, 1=支持Archive上传 0=所有Release模式编译都上传\n# UPLOAD_ARCHIVE_ONLY=0\n#\n# #\n# source dSYMUpload.sh\n#\n# --- END OF SCRIPT ---\n#\n#\n#\n#\n#######################################################\n# 2. 脚本根据输入参数处理\n#######################################################\n#\n# #命令行下输入应用基本信息, .dSYM文件的父目录路径, 输出文件目录即可\n#\n# sh dSYMUpload.sh <bugly_app_id> <bugly_app_key> <app_bundle_identifier> <app_version> <dSYM_src_dir> <bSYMBOL_dest_dir>\n#\n# #\n#\n# #注意:\n# # 1. dSYMUpload.sh会调用buglySymboliOS.jar进行.dSYM解析，所以依赖Java运行时环境\n# # 2. dSYMUpload.sh和buglySymboliOS.jar的文件路径需一致\n#\n#\n\n#\n# --- CONTENT OF SCRIPT ---\n#\n\n# Bugly服务域名\nBUGLY_DSYM_UPLOAD_DOMAIN=\"api.bugly.qq.com\"\n\n# 注意jar工具的路径跟dSYMUpload.sh脚本路径一致, 请务必保证jar路径的正确性\nBUGLY_SYMBOL_JAR_PATH=\"dsymtool/buglySymboliOS.jar\"\n# 查找添加到系统目录的jar工具\nif [ ! -f \"${BUGLY_SYMBOL_JAR_PATH}\" ]; then\n    BUGLY_SYMBOL_JAR_PATH=\"$HOME/bin/buglySymboliOS.jar\"\nfi\n\n# 打印错误信息\nfunction exitWithMessage(){\n    echo \"--------------------------------\"\n    echo \"${1}\"\n    echo \"--------------------------------\"\n    exit ${2}\n}\n\n# 上传bSYMBOL文件\nfunction dSYMUpload() {\n    P_APP_ID=\"$1\"\n    P_APP_KEY=\"$2\"\n    P_APP_BUNDLE_ID=\"$3\"\n    P_APP_VERSION=\"$4\"\n    P_BSYMBOL_ZIP_FILE=\"$5\"\n\n    #\n    P_BSYMBOL_ZIP_FILE_NAME=${P_BSYMBOL_ZIP_FILE##*/}\n    P_BSYMBOL_ZIP_FILE_NAME=${P_BSYMBOL_ZIP_FILE_NAME//&/_}\n    P_BSYMBOL_ZIP_FILE_NAME=\"${P_BSYMBOL_ZIP_FILE_NAME// /_}\"\n\n    DSYM_UPLOAD_URL=\"https://${BUGLY_DSYM_UPLOAD_DOMAIN}/openapi/file/upload/symbol?app_id=${P_APP_ID}&app_key=${P_APP_KEY}\"\n    echo \"dSYM upload url: ${DSYM_UPLOAD_URL}\"\n\n    echo \"-----------------------------\"\n    STATUS=$(/usr/bin/curl -k \"${DSYM_UPLOAD_URL}\" --form \"api_version=1\" --form \"app_id=${P_APP_ID}\" --form \"app_key=${P_APP_KEY}\" --form \"symbolType=2\"  --form \"bundleId=${BUNDLE_IDENTIFIER}\" --form \"productVersion=${BUGLY_APP_VERSION}\" --form \"fileName=${P_BSYMBOL_ZIP_FILE_NAME}\" --form \"file=@${P_BSYMBOL_ZIP_FILE}\" --verbose)\n    echo \"-----------------------------\"\n\n    UPLOAD_RESULT=\"FAILTURE\"\n    echo \"Bugly server response: ${STATUS}\"\n    if [ ! \"${STATUS}\" ]; then\n        echo \"Error: Failed to upload the zip archive file.\"\n    elif [[ \"${STATUS}\" == *\"{\\\"reponseCode\\\":\\\"0\\\"}\"* ]]; then\n        echo \"Success to upload the dSYM for the app [${BUNDLE_IDENTIFIER} ${BUGLY_APP_VERSION}]\"\n        UPLOAD_RESULT=\"SUCCESS\"\n    else\n        echo \"Error: Failed to upload the zip archive file to Bugly.\"\n    fi\n\n    #Remove temp dSYM archive\n    #echo \"Remove temporary zip archive: ${DSYM_ZIP_FPATH}\"\n    #/bin/rm -f \"${DSYM_ZIP_FPATH}\"\n\n    if [ \"$?\" -ne 0 ]; then\n        exitWithMessage \"Error: Failed to remove temporary zip archive.\" 0\n    fi\n\n    echo \"--------------------------------\"\n    echo \"${UPLOAD_RESULT} - dSYM upload complete.\"\n\n    if [[ \"${UPLOAD_RESULT}\" == \"FAILTURE\" ]]; then\n        echo \"--------------------------------\"\n        echo \"Failed to upload the dSYM\"\n        echo \"Please check the script and try it again.\"\n    fi\n}\n\n# .dSYM解析为bSYMBOL文件\nfunction dSYMParse() {\n    DSYM_FILE=\"$1\"\n    DSYM_SYMBOL_FILE=\"$2\"\n\n    echo \"--------------------------------\"\n    echo \"Extract symbol info from .dSYM file. to ${DSYM_SYMBOL_FILE}\"\n    (/usr/bin/java -Xms512m -Xmx1024m -Dfile.encoding=UTF8 -jar \"${BUGLY_SYMBOL_JAR_PATH}\" -i \"${DSYM_FILE}\" -o \"${DSYM_SYMBOL_FILE}\" ) || exitWithMessage \"Error: Failed to extract symbols.\" 1\n    echo \"--------------------------------\"\n\n}\n\n# 执行\nfunction run() {\n\n    CONFIG_BUGLY_APP_ID=\"$1\"\n    CONFIG_BUGLY_APP_KEY=\"$2\"\n\n    CONFIG_BUGLY_APP_BUNDLE_IDENTIFIER=\"$3\"\n    CONFIG_BUGLY_APP_VERSION=\"$4\"\n    CONFIG_DSYM_SOURCE_DIR=\"$5\"\n    CONFIG_DSYM_DEST_DIR=\"$6\"\n    CONFIG_UPLOAD_DSYM_ONLY=\"$7\"\n\n    # 检查必须参数是否设置\n    if [ ! \"${CONFIG_BUGLY_APP_ID}\" ]; then\n        exitWithMessage \"Error: Bugly App ID not defined. Please set 'BUGLY_APP_ID' \" 0\n    fi\n\n    if [[ \"${CONFIG_BUGLY_APP_ID}\" == *\"App ID\"* ]]; then\n        exitWithMessage \"Error: Bugly App ID not defined.\" 0\n    fi\n\n    if [ ! \"${CONFIG_BUGLY_APP_KEY}\" ]; then\n        exitWithMessage \"Error: Bugly App Key not defined.\" 0\n    fi\n\n    if [ ! \"${CONFIG_BUGLY_APP_BUNDLE_IDENTIFIER}\" ]; then\n        exitWithMessage \"Error: Bundle Identifier not defined.\" 0\n    fi\n\n    if [ ! \"${CONFIG_BUGLY_APP_VERSION}\" ]; then\n        exitWithMessage \"Error: App Version not defined.\" 0\n    fi\n\n    if [ ! -e \"${CONFIG_DSYM_SOURCE_DIR}\" ]; then\n        exitWithMessage \"Error: Invalid dir ${CONFIG_DSYM_SOURCE_DIR}\" 0\n    fi\n\n    if [ ! \"${CONFIG_DSYM_DEST_DIR}\" ]; then\n        exitWithMessage \"Error: Invalid dir ${CONFIG_DSYM_DEST_DIR}\" 0\n    fi\n\n    if [ ! -e \"${CONFIG_DSYM_DEST_DIR}\" ]; then\n        mkdir ${CONFIG_DSYM_DEST_DIR}\n    fi\n\n    DSYM_FOLDER=\"${CONFIG_DSYM_SOURCE_DIR}\"\n    IFS=$'\\n'\n\n    echo \"Scaning dSYM FOLDER: ${DSYM_FOLDER} ...\"\n    RET=\"F\"\n    \n    #\n    for dsymFile in $(find \"$DSYM_FOLDER\" -name '*.dSYM'); do\n        RET=\"T\"\n        echo \"Found dSYM file: $dsymFile\"\n\n        DSYM_FILE_NAME=${dsymFile##*/}\n        DSYM_SYMBOL_ZIP_FILE_NAME=\"${DSYM_FILE_NAME}.zip\"\n        DSYM_SYMBOL_ZIP_FILE_NAME=\"${DSYM_SYMBOL_ZIP_FILE_NAME// /_}\"\n        DSYM_SYMBOL_ZIP_FILE=${CONFIG_DSYM_DEST_DIR}/${DSYM_SYMBOL_ZIP_FILE_NAME}\n\n        if [ $CONFIG_UPLOAD_DSYM_ONLY -eq 1 ]; then\n            if [ -e $DSYM_SYMBOL_ZIP_FILE ]; then\n                rm -f $DSYM_SYMBOL_ZIP_FILE\n            fi\n            # 如果只上传dSYM，直接压缩dSYM目录\n            zip -r -j $DSYM_SYMBOL_ZIP_FILE $dsymFile -x *.plist\n        else\n            # 使用符号表工具来生成Symbol文件\n            dSYMParse $dsymFile $DSYM_SYMBOL_ZIP_FILE\n        fi\n        \n        # 上传\n        dSYMUpload $CONFIG_BUGLY_APP_ID $CONFIG_BUGLY_APP_KEY $CONFIG_BUGLY_APP_BUNDLE_IDENTIFIER $CONFIG_BUGLY_APP_VERSION $DSYM_SYMBOL_ZIP_FILE\n    done\n\n    if [ $RET = \"F\" ]; then\n        exitWithMessage \"No .dSYM found in ${DSYM_FOLDER}\" 0\n    fi\n}\n\n# 在Xcode工程中执行\nfunction runInXcode(){\n    echo \"Uploading dSYM to Bugly in Xcode ...\"\n\n    echo \"Info.Plist : ${INFOPLIST_FILE}\"\n\n    BUNDLE_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleVersion' \"${INFOPLIST_FILE}\")\n    BUNDLE_SHORT_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleShortVersionString' \"${INFOPLIST_FILE}\")\n\n    # 组装Bugly默认识别的版本信息(格式为CFBundleShortVersionString(CFBundleVersion), 例如: 1.0(1))\n    if [ ! \"${CUSTOMIZED_APP_VERSION}\" ]; then\n        BUGLY_APP_VERSION=\"${BUNDLE_SHORT_VERSION}(${BUNDLE_VERSION})\"\n    else\n        BUGLY_APP_VERSION=\"${CUSTOMIZED_APP_VERSION}\"\n    fi\n\n    echo \"--------------------------------\"\n    echo \"Prepare application information.\"\n    echo \"--------------------------------\"\n\n    echo \"Product Name: ${PRODUCT_NAME}\"\n    echo \"Bundle Identifier: ${BUNDLE_IDENTIFIER}\"\n    echo \"Version: ${BUNDLE_SHORT_VERSION}\"\n    echo \"Build: ${BUNDLE_VERSION}\"\n\n    echo \"Bugly App ID: ${BUGLY_APP_ID}\"\n    echo \"Bugly App key: ${BUGLY_APP_KEY}\"\n    echo \"Bugly App Version: ${BUGLY_APP_VERSION}\"\n\n    echo \"--------------------------------\"\n    echo \"Check the arguments ...\"\n\n    ##检查模拟器编译是否允许上传符号\n    if [ \"$EFFECTIVE_PLATFORM_NAME\" == \"-iphonesimulator\" ]; then\n    if [ $UPLOAD_SIMULATOR_SYMBOLS -eq 0 ]; then\n        exitWithMessage \"Warning: Build for simulator and skipping to upload. \\nYou can modify 'UPLOAD_SIMULATOR_SYMBOLS' to 1 in the script.\" 0\n    fi\n    fi\n\n    ##检查是否是Release模式编译\n    if [ \"${CONFIGURATION=}\" == \"Debug\" ]; then\n    if [ $UPLOAD_DEBUG_SYMBOLS -eq 0 ]; then\n        exitWithMessage \"Warning: Build for debug mode and skipping to upload. \\nYou can modify 'UPLOAD_DEBUG_SYMBOLS' to 1 in the script.\" 0\n    fi\n    fi\n\n    ##检查是否Archive操作\n    if [ $UPLOAD_ARCHIVE_ONLY -eq 1 ]; then\n    if [[ \"$TARGET_BUILD_DIR\" == *\"/Archive\"* ]]; then\n        echo \"Archive the package\"\n    else\n        exitWithMessage \"Warning: Build for NOT Archive mode and skipping to upload. \\nYou can modify 'UPLOAD_ARCHIVE_ONLY' to 0 in the script.\" 0\n    fi\n    fi\n\n    #\n    run ${BUGLY_APP_ID} ${BUGLY_APP_KEY} ${BUNDLE_IDENTIFIER} ${BUGLY_APP_VERSION} ${DWARF_DSYM_FOLDER_PATH} ${BUILD_DIR}/BuglySymbolTemp ${UPLOAD_DSYM_ONLY}\n}\n\n# 根据Xcode的环境变量判断是否处于Xcode环境\nINFO_PLIST_FILE=\"${INFOPLIST_FILE}\"\n\nBuildInXcode=\"F\"\nif [ -f \"${INFO_PLIST_FILE}\" ]; then\n    BuildInXcode=\"T\"\nfi\n\nif [ $BuildInXcode = \"T\" ]; then\n    runInXcode\nelse\n    echo \"\\nUsage: dSYMUpload.sh <bugly_app_id> <bugly_app_key> <app_bundle_identifier> <app_version> <dSYM_src_dir> <bSYMBOL_dest_dir> [upload_dsym_only]\\n\"\n    # 你可以在此处直接设置BuglyAppID和BuglyAppKey，排除不常变参数的输入\n    BUGLY_APP_ID=\"$1\"\n    BUGLY_APP_KEY=\"$2\"\n    BUNDLE_IDENTIFIER=\"$3\"\n    BUGLY_APP_VERSION=\"$4\"\n    DWARF_DSYM_FOLDER_PATH=\"$5\"\n    SYMBOL_OUTPUT_PATH=\"$6\"\n    UPLOAD_DSYM_ONLY=$7\n    run ${BUGLY_APP_ID} ${BUGLY_APP_KEY} ${BUNDLE_IDENTIFIER} ${BUGLY_APP_VERSION} ${DWARF_DSYM_FOLDER_PATH} ${SYMBOL_OUTPUT_PATH} ${UPLOAD_DSYM_ONLY}\nfi\n\n";
+		};
+		6B90CFCEE5562580A6A3C846 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-online-iOS/Pods-online-iOS-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-online-iOS/Pods-online-iOS-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-online-iOS/Pods-online-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D343389A9C6D5147858EB79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-online-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A618A600B85E40F3878C2F78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-online-iOS/Pods-online-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-online-iOS/Pods-online-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-online-iOS/Pods-online-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28F846B325C94438006A241D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2854C41525CAA4C2003A294C /* KFNavigationController.m in Sources */,
+				2888E80325C95025006A3016 /* KFViewController.m in Sources */,
+				2854C45025CBE747003A294C /* KFHomeApi.m in Sources */,
+				28A3C95325CF9189004B82F3 /* NSString+KFRegular.m in Sources */,
+				2854C44625CBD818003A294C /* KFRequest.m in Sources */,
+				2854C41D25CAAABC003A294C /* UIScrollView+KFRefreshView.m in Sources */,
+				2854C44B25CBD849003A294C /* KFHostViewController.m in Sources */,
+				28A3C93F25CF8625004B82F3 /* NSObject+KFObserverHelper.m in Sources */,
+				2854C41025CAA49F003A294C /* KFTabBarController.m in Sources */,
+				2888E80925C953A9006A3016 /* main.m in Sources */,
+				28A3C93A25CF8574004B82F3 /* UIView+KFFrame.m in Sources */,
+				28A3C94425CF8828004B82F3 /* NSNumber+KFDecimalNumber.m in Sources */,
+				28F846DE25C94528006A241D /* KFAppDelegate.m in Sources */,
+				2854C47125CBECA7003A294C /* KFMineViewController.m in Sources */,
+				28A3C94925CF8F86004B82F3 /* NSArray+KFCrash.m in Sources */,
+				2854C40B25CAA379003A294C /* KFBasicServices.m in Sources */,
+				28A3C94E25CF9060004B82F3 /* NSDictionary+KFCrash.m in Sources */,
+				28D39AC625CD2D8600363541 /* KFLoginViewController.m in Sources */,
+				2854C46825CBEBE1003A294C /* KFHomeViewController.m in Sources */,
+				2854C42725CAAE57003A294C /* KFMJImageHelper.m in Sources */,
+				2854C45D25CBEA2C003A294C /* NSMutableDictionary+KFOperation.m in Sources */,
+				2854C42C25CAAF48003A294C /* UIImage+KFCompression.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		28F846CE25C9443E006A241D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		28F846CF25C9443E006A241D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28F846D125C9443E006A241D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0F29FA00F6CDC0A7FC054AA /* Pods-online-iOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = KF_AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "online-iOS/online-iOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0;
+				DEVELOPMENT_TEAM = G7DTK8JUZ8;
+				GCC_PREFIX_HEADER = "online-iOS/KFangWang-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/online-iOS/KFangWang-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/BaiduMapKit/BaiduMapKit/thirdlibs",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kfang.online;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		28F846D225C9443E006A241D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A7BB9C2E782EDEDCB2A05FA /* Pods-online-iOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = KF_AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "online-iOS/online-iOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0;
+				DEVELOPMENT_TEAM = G7DTK8JUZ8;
+				GCC_PREFIX_HEADER = "online-iOS/KFangWang-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/online-iOS/KFangWang-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/BaiduMapKit/BaiduMapKit/thirdlibs",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kfang.online;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28F846B225C94438006A241D /* Build configuration list for PBXProject "online-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28F846CE25C9443E006A241D /* Debug */,
+				28F846CF25C9443E006A241D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28F846D025C9443E006A241D /* Build configuration list for PBXNativeTarget "online-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28F846D125C9443E006A241D /* Debug */,
+				28F846D225C9443E006A241D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28F846AF25C94438006A241D /* Project object */;
+}

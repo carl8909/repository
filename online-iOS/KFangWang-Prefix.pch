@@ -1,0 +1,36 @@
+//
+//  KFangWang-Prefix.pch
+//  online-iOS
+//
+//  Created by wuy on 2021/2/3.
+//  Copyright © 2021 深圳市看房网科技有限公司. All rights reserved.
+//
+
+#ifndef KFangWang_Prefix_pch
+#define KFangWang_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+// 基础库
+#import <Masonry/Masonry.h>
+#import <Bugly/Bugly.h>
+#import <MJExtension/MJExtension.h>
+#import <MJRefresh/MJRefresh.h>
+#import <JPush/JPUSHService.h>
+#import <MBProgressHUD/MBProgressHUD.h>
+#import <YTKNetwork/YTKRequest.h>
+
+// 扩展类
+#import "UIImage+KFCompression.h"
+#import "UIScrollView+KFRefreshView.h"
+#import "NSMutableDictionary+KFOperation.h"
+#import "UIView+KFFrame.h"
+#import "NSNumber+KFDecimalNumber.h"
+#import "NSArray+KFCrash.h"
+#import "NSDictionary+KFCrash.h"
+
+// 自定义宏
+#import "KFMacors.h"
+
+#endif /* KFangWang_Prefix_pch */
