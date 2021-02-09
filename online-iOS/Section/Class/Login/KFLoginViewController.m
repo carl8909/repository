@@ -17,6 +17,8 @@
 
 @property (nonatomic, copy) NSString *tit2;
 
+@property (nonatomic, copy) NSString *tit3;
+
 @end
 
 
