@@ -23,13 +23,16 @@ target 'online-iOS' do
   # 友盟分享
   pod 'UMCShare/Social/WeChat', '~> 6.10.2'
   pod 'UMCShare/Social/QQ', '~> 6.10.2'
- 
+  
+  # 代码提交规范
+  pod 'SpaceCommander', '~> 2.0.0'
   
 end
 
 
 post_install do |installer|
     
+    `./Pods/SpaceCommander/setup-repo.sh`
     installer.pods_project.targets.each do |target|
         target.build_configurations.each do |config|
             config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '9.0'
